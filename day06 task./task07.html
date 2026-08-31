@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        td:nth-child(4) {
+            text-align: right;
+        }
+        td:nth-child(5) {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Restaurant Menu</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Starters Category (rowspan = 2) -->
+            <tr>
+                <td rowspan="2">Starters</td>
+                <td>Spring Roll</td>
+                <td>Crispy vegetable rolls served with dip</td>
+                <td>₹120</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Paneer Tikka</td>
+                <td>Spicy grilled cottage cheese chunks</td>
+                <td>₹180</td>
+                <td>Available</td>
+            </tr>
+
+            <!-- Main Course Category (rowspan = 2) -->
+            <tr>
+                <td rowspan="2">Main Course</td>
+                <td>Butter Chicken</td>
+                <td>Tender chicken in rich creamy tomato gravy</td>
+                <td>₹280</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Veg Biryani</td>
+                <td>Aromatic basmati rice cooked with mixed vegetables</td>
+                <td>₹200</td>
+                <td>Available</td>
+            </tr>
+
+            <!-- Desserts Category -->
+            <tr>
+                <td>Desserts</td>
+                <td>Gulab Jamun</td>
+                <td>Sweet deep-fried milk dumplings in sugar syrup</td>
+                <td>₹90</td>
+                <td>Available</td>
+            </tr>
+
+            <!-- Beverages Category -->
+            <tr>
+                <td>Beverages</td>
+                <td>Cold Coffee</td>
+                <td>Chilled blended coffee with ice cream</td>
+                <td>₹100</td>
+                <td>Available</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

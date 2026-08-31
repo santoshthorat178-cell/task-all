@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking Management</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Align guest names to the left */
+        td:nth-child(2), th:nth-child(2) {
+            text-align: left;
+        }
+        /* Status styling */
+        .status-confirmed { color: green; font-weight: bold; }
+        .status-cancelled { color: red; font-weight: bold; }
+        .status-checkedin { color: blue; font-weight: bold; }
+        .status-checkedout { color: gray; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h2>Hotel Room Booking Management</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Booking ID</th>
+                <th>Guest Name</th>
+                <th>Room No</th>
+                <th>Room Type</th>
+                <th>Check-in</th>
+                <th>Check-out</th>
+                <th>Guests</th>
+                <th>Amount</th>
+                <th>Booking Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>BK201</td>
+                <td>Rahul Sharma</td>
+                <td>101</td>
+                <td>Deluxe</td>
+                <td>2026-09-01</td>
+                <td>2026-09-04</td>
+                <td>2</td>
+                <td>₹12,000</td>
+                <td><span class="status-confirmed">Confirmed</span></td>
+            </tr>
+            <tr>
+                <td>BK202</td>
+                <td>Priya Patel</td>
+                <td>105</td>
+                <td>Suite</td>
+                <td>2026-08-28</td>
+                <td>2026-08-31</td>
+                <td>3</td>
+                <td>₹25,000</td>
+                <td><span class="status-checkedout">Checked-Out</span></td>
+            </tr>
+            <tr>
+                <td>BK203</td>
+                <td>Amit Kumar</td>
+                <td>202</td>
+                <td>Standard</td>
+                <td>2026-09-02</td>
+                <td>2026-09-05</td>
+                <td>1</td>
+                <td>₹6,000</td>
+                <td><span class="status-confirmed">Confirmed</span></td>
+            </tr>
+            <tr>
+                <td>BK204</td>
+                <td>Sneha Gupta</td>
+                <td>204</td>
+                <td>Deluxe</td>
+                <td>2026-08-30</td>
+                <td>2026-09-02</td>
+                <td>2</td>
+                <td>₹9,000</td>
+                <td><span class="status-checkedin">Checked-In</span></td>
+            </tr>
+            <tr>
+                <td>BK205</td>
+                <td>Vikram Singh</td>
+                <td>301</td>
+                <td>Suite</td>
+                <td>2026-09-05</td>
+                <td>2026-09-10</td>
+                <td>4</td>
+                <td>₹40,000</td>
+                <td><span class="status-confirmed">Confirmed</span></td>
+            </tr>
+            <tr>
+                <td>BK206</td>
+                <td>Ananya Iyer</td>
+                <td>108</td>
+                <td>Standard</td>
+                <td>2026-08-25</td>
+                <td>2026-08-27</td>
+                <td>2</td>
+                <td>₹4,000</td>
+                <td><span class="status-cancelled">Cancelled</span></td>
+            </tr>
+            <tr>
+                <td>BK207</td>
+                <td>Rohan Joshi</td>
+                <td>210</td>
+                <td>Deluxe</td>
+                <td>2026-08-31</td>
+                <td>2026-09-03</td>
+                <td>2</td>
+                <td>₹10,500</td>
+                <td><span class="status-checkedin">Checked-In</span></td>
+            </tr>
+            <tr>
+                <td>BK208</td>
+                <td>Neha Kulkarni</td>
+                <td>305</td>
+                <td>Suite</td>
+                <td>2026-09-10</td>
+                <td>2026-09-15</td>
+                <td>2</td>
+                <td>₹35,000</td>
+                <td><span class="status-confirmed">Confirmed</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

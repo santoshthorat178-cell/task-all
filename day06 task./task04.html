@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Sheet</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Align student names to the left */
+        td:nth-child(2), th:nth-child(2) {
+            text-align: left;
+        }
+        .summary-row {
+            font-weight: bold;
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <!-- Heading using colspan as required -->
+            <tr>
+                <th colspan="10">University Student Result Sheet - 2026</th>
+            </tr>
+            <tr>
+                <th>Roll No</th>
+                <th>Student Name</th>
+                <th>HTML</th>
+                <th>CSS</th>
+                <th>Java</th>
+                <th>SQL</th>
+                <th>Total</th>
+                <th>Percentage</th>
+                <th>Grade</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Rahul Sharma</td>
+                <td>85</td>
+                <td>90</td>
+                <td>78</td>
+                <td>88</td>
+                <td>341</td>
+                <td>85.25%</td>
+                <td>A</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Priya Patel</td>
+                <td>92</td>
+                <td>88</td>
+                <td>95</td>
+                <td>91</td>
+                <td>366</td>
+                <td>91.50%</td>
+                <td>A+</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Amit Kumar</td>
+                <td>65</td>
+                <td>70</td>
+                <td>60</td>
+                <td>55</td>
+                <td>250</td>
+                <td>62.50%</td>
+                <td>C</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Sneha Gupta</td>
+                <td>78</td>
+                <td>82</td>
+                <td>75</td>
+                <td>80</td>
+                <td>315</td>
+                <td>78.75%</td>
+                <td>B</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>Vikram Singh</td>
+                <td>45</td>
+                <td>50</td>
+                <td>38</td>
+                <td>42</td>
+                <td>175</td>
+                <td>43.75%</td>
+                <td>D</td>
+                <td>Fail</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- Summary rows as required -->
+            <tr class="summary-row">
+                <td colspan="2">Highest Marks</td>
+                <td>92</td>
+                <td>90</td>
+                <td>95</td>
+                <td>91</td>
+                <td colspan="4">366</td>
+            </tr>
+            <tr class="summary-row">
+                <td colspan="2">Average Marks</td>
+                <td>73.0</td>
+                <td>76.0</td>
+                <td>69.2</td>
+                <td>71.2</td>
+                <td colspan="4">289.4</td>
+            </tr>
+            <tr class="summary-row">
+                <td colspan="2">Number of Students</td>
+                <td colspan="8">5</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
